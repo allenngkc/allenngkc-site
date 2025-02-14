@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import NavBar from './components/navbar'
 import './App.css'
 
 function App() {
   return (
     <>
       <div>
+        <NavBar />
         <h1>Hello Vite + React!</h1>
       </div>
     </>
