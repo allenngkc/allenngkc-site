@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Text, Heading, Box, List, ListItem, Link, Icon } from '@chakra-ui/react';
-import { IoLogoGithub } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 function Socials() {
     return (
@@ -22,6 +22,17 @@ function Socials() {
                             <ListItem>
                                 <Icon mr={2}><IoLogoGithub/></Icon>
                                 <Link href="https://github.com/allenngkc" target="_blank">
+                                    <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    >
+                                        @allenngkc
+                                    </Button>
+                                </Link>
+                            </ListItem>
+                            <ListItem>
+                                <Icon mr={2}><IoLogoLinkedin/></Icon>
+                                <Link href="https://linkedin.com/allenngkc" target="_blank">
                                     <Button
                                     variant="ghost"
                                     colorScheme="teal"

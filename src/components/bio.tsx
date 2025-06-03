@@ -12,6 +12,7 @@ const Bio: React.FC = () => {
           textAlign="center"
           marginRight="6rem"
           marginBottom="1.5rem"
+          marginTop="4rem"
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           css={{backdropFilter: "blur(10px)"}}
         >
@@ -146,7 +147,7 @@ const Bio: React.FC = () => {
           </Box>
           <Box mb={1} ml={{ base: 0, md: 125 }}>
             <Text fontSize={15} color="gray.400">
-              Incoming SWE Intern for fall 2025 Term
+              Incoming SWE Intern for fall 2025 term
             </Text>
           </Box>
         </Box>
