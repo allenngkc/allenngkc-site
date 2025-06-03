@@ -18,6 +18,7 @@ const NavButton: React.FC<{ label: string; active: boolean; onClick:() => void}>
         <Text 
             color={active ? 'black' : 'white'}
             fontFamily="Lato, sans-serif"
+            fontSize={18}
             _hover={{}}
         >
             {label}
