@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Text, Image, Heading } from "@chakra-ui/react";
+import { Container, Box, Text, Image, Heading, Link } from "@chakra-ui/react";
 import { useColorModeValue } from "./ui/color-mode";
 
 const Bio: React.FC = () => {
@@ -64,9 +64,22 @@ const Bio: React.FC = () => {
 
         <Box textAlign="left" mb={8}>
           <Heading as="h3" fontSize={22} mb={3}>
-
+            <Link href="/notes" color="teal.500" textDecoration="underline">
+              Notes
+            </Link>
           </Heading>
-
+          <Text 
+            textIndent={"1em"}
+            fontSize={17}
+            maxWidth={"35rem"} 
+            wordBreak={"break-word"}
+            hyphens={"auto"}
+          >
+            I prefer conceptional note-taking over traditional note-taking methods. 
+            I started using Obsidian extensively since 2023. Most of my notes are
+            about poker, finance, competitive programming and course contents I've
+            taken at Waterloo.
+          </Text>
         </Box>
 
         <Box textAlign={"left"}>
