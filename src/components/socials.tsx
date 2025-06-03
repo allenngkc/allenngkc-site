@@ -14,10 +14,17 @@ function Socials() {
                 My Projects  &gt;
                 </Button>
                 <Box display={{base: 'block', md: 'flex'}} alignItems="center" mb="1.5rem">
-                    <Box textAlign={"text"} mb={8}>
-                        <Heading as="h3" fontSize={22} mb={3}>
+                    <Box textAlign={"left"} mb={8}>
+                        <Heading as="h3" fontSize={22}>
                             Socials
                         </Heading>
+                        <hr style={{
+                            width: "80px",
+                            height: "3px",
+                            backgroundColor: "#4A5568",
+                            border: "none",
+                            margin: "0 0 16px 0"
+                        }} />
                         <List.Root>
                             <ListItem>
                                 <Icon mr={2}><IoLogoGithub/></Icon>

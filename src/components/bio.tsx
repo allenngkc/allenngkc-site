@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Text, Image, Heading, Link } from "@chakra-ui/react";
+import { Container, Box, Text, Image, Heading, Button } from "@chakra-ui/react";
 import { useColorModeValue } from "./ui/color-mode";
 
 const Bio: React.FC = () => {
@@ -42,9 +42,16 @@ const Bio: React.FC = () => {
         </Box>
 
         <Box textAlign={"left"} mb={8}>
-          <Heading as="h3" fontSize={22} mb={3}>
+          <Heading as="h3" fontSize={22}>
             About Me
           </Heading>
+          <hr style={{
+            width: "105px",
+            height: "3px",
+            backgroundColor: "#4A5568",
+            border: "none",
+            margin: "0 0 16px 0"
+          }} />
           <Text 
             textIndent={"1em"}
             fontSize={17}
@@ -63,11 +70,16 @@ const Bio: React.FC = () => {
         </Box>
 
         <Box textAlign="left" mb={8}>
-          <Heading as="h3" fontSize={22} mb={3}>
-            <Link href="/notes" color="teal.500" textDecoration="underline">
-              Notes
-            </Link>
+          <Heading as="h3" fontSize={22}>
+            Obsidian Notes
           </Heading>
+          <hr style={{
+            width: "165px",
+            height: "3px",
+            backgroundColor: "#4A5568",
+            border: "none",
+            margin: "0 0 16px 0"
+          }} />
           <Text 
             textIndent={"1em"}
             fontSize={17}
@@ -77,15 +89,32 @@ const Bio: React.FC = () => {
           >
             I prefer conceptional note-taking over traditional note-taking methods. 
             I started using Obsidian extensively since 2023. Most of my notes are
-            about poker, finance, competitive programming and course contents I've
-            taken at Waterloo.
+            about poker, competitive programming and courses I've
+            taken at Waterloo. You can check out my notes here!
           </Text>
+          <Button
+            bg="#81E6D9"
+            color="black"
+            display="block"
+            mx="auto"
+            mt={8}
+            mb={4}
+          >
+              Osidian Notes &gt;
+          </Button>
         </Box>
 
         <Box textAlign={"left"}>
-        <Heading as="h3" fontSize={22} mb={3}>
+        <Heading as="h3" fontSize={22}>
           Bio
         </Heading>
+        <hr style={{
+            width: "30px",
+            height: "3px",
+            backgroundColor: "#4A5568",
+            border: "none",
+            margin: "0 0 16px 0"
+          }} />
         <Box>
           <Box display={{ base: "block", md: "flex" }} mb={1}>
             <Text
