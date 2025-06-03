@@ -30,7 +30,16 @@ const NavBar: React.FC = () => {
     const [activePage, setActivePage] = React.useState<string>('Home')
 
     return (
-        <Container padding="1rem" zIndex="100" position="fixed" top="0" left="0" right="0">
+        <Container 
+            padding="1rem" 
+            zIndex="100" 
+            position="fixed" 
+            top="0" 
+            left="0" 
+            right="0"
+            bg="rgba(32, 32, 35, 0.65)"
+            backdropFilter="saturate(180%) blur(10px)"
+            >
             <HStack alignContent="center" justifyContent="center">
                 <NavButton label="Home" active={activePage === 'Home'} onClick={() => setActivePage('Home')}/>
                 <NavButton label="About" active={activePage === 'About'} onClick={() => setActivePage('About')}/>
