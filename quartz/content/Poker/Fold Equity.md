@@ -1,0 +1,1 @@
+The additional equity you stand to gain based on the probability that your opponent will fold to a bet or raise.

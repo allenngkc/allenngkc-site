@@ -1,0 +1,1 @@
+If $f$ has a local maximum or minimum at $c$, and $f'(c)$ exists, then $f'(c)$ = 0
