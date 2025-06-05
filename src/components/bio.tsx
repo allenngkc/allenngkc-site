@@ -99,7 +99,7 @@ const Bio: React.FC = () => {
             mx="auto"
             mt={8}
             mb={4}
-            onClick={() => window.location.href = 'http://localhost:8080'}
+            onClick={() => window.location.href = '/notes'}
           >
               Obsidian Notes &gt;
           </Button>

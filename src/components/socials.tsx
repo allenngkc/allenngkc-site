@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, Container, Text, Heading, Box, List, ListItem, Link, Icon } from '@chakra-ui/react';
+import { Button, Container, Heading, Box, List, ListItem, Link, Icon } from '@chakra-ui/react';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 function Socials() {

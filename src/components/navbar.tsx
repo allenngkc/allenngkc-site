@@ -1,6 +1,5 @@
 import React from 'react'
 import {Button, Container, HStack, Text} from '@chakra-ui/react'
-import { MdDoDisturb } from 'react-icons/md';
 
 const NavButton: React.FC<{ label: string; active: boolean; onClick:() => void}> = ({label, active, onClick}) => (
     <Button
