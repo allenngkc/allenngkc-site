@@ -8,19 +8,14 @@
       }
     }
   ],
-  "functions": {
-    "quartz/public/**": {
-      "includeFiles": "quartz/public/**"
-    }
-  },
   "routes": [
     {
       "src": "/notes/(.*)",
-      "dest": "/quartz/public/$1"
+      "dest": "/notes/$1"
     },
     {
       "src": "/notes",
-      "dest": "/quartz/public/index.html"
+      "dest": "/notes/index.html"
     },
     {
       "src": "/(.*)",
