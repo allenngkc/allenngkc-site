@@ -41,7 +41,7 @@ const Bio: React.FC = () => {
           />
         </Box>
 
-        <Box textAlign={"left"} mb={8}>
+        <Box textAlign={"left"} mb={8} id="about-me">
           <Heading as="h3" fontSize={22}>
             About Me
           </Heading>
@@ -69,7 +69,7 @@ const Bio: React.FC = () => {
           </Text>
         </Box>
 
-        <Box textAlign="left" mb={8}>
+        <Box textAlign="left" mb={8} id="notes">
           <Heading as="h3" fontSize={22}>
             Obsidian Notes
           </Heading>
@@ -100,7 +100,7 @@ const Bio: React.FC = () => {
             mt={8}
             mb={4}
           >
-              Osidian Notes &gt;
+              Obsidian Notes &gt;
           </Button>
         </Box>
 

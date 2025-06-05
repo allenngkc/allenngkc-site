@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button, Container, HStack, Text} from '@chakra-ui/react'
+import { MdDoDisturb } from 'react-icons/md';
 
 const NavButton: React.FC<{ label: string; active: boolean; onClick:() => void}> = ({label, active, onClick}) => (
     <Button
@@ -29,6 +30,27 @@ const NavButton: React.FC<{ label: string; active: boolean; onClick:() => void}>
 const NavBar: React.FC = () => {
     const [activePage, setActivePage] = React.useState<string>('Home')
 
+    const handleNavClick = (page: string) => {
+        setActivePage(page);
+        var pageElement = "";
+        if (page === 'Home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        } else if (page === 'Projects') {
+            pageElement = 'projects';
+        } else if (page === 'Notes') {
+            pageElement = 'notes';
+        } else if (page === 'About') {
+            pageElement = 'about-me';
+        }
+        
+        const aboutSection = document.getElementById(pageElement);
+        if (!aboutSection) return;
+        const offset = -80;
+        const y = aboutSection?.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
     return (
         <Container 
             padding="1rem" 
@@ -41,10 +63,10 @@ const NavBar: React.FC = () => {
             backdropFilter="saturate(180%) blur(10px)"
             >
             <HStack alignContent="center" justifyContent="center">
-                <NavButton label="Home" active={activePage === 'Home'} onClick={() => setActivePage('Home')}/>
-                <NavButton label="About" active={activePage === 'About'} onClick={() => setActivePage('About')}/>
-                <NavButton label="Projects" active={activePage === 'Projects'} onClick={() => setActivePage('Projects')}/>
-                <NavButton label="Notes" active={activePage === 'Notes'} onClick={() => setActivePage('Notes')}/>
+                <NavButton label="Home" active={activePage === 'Home'} onClick={() => handleNavClick('Home')}/>
+                <NavButton label="About" active={activePage === 'About'} onClick={() => handleNavClick('About')}/>
+                <NavButton label="Projects" active={activePage === 'Projects'} onClick={() => handleNavClick('Projects')}/>
+                <NavButton label="Notes" active={activePage === 'Notes'} onClick={() => handleNavClick('Notes')}/>
             </HStack>
         </Container>
     )

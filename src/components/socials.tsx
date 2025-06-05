@@ -10,6 +10,7 @@ function Socials() {
                 bg="#81E6D9" 
                 color="black"
                 mb={10}
+                id='projects'
                 >
                 My Projects  &gt;
                 </Button>
