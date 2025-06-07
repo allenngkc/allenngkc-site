@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Box, Text, Image, Heading, Button } from "@chakra-ui/react";
 import { useColorModeValue } from "./ui/color-mode";
+import pfp from "../assets/pfp.png";
 
 const Bio: React.FC = () => {
   return (
@@ -33,7 +34,7 @@ const Bio: React.FC = () => {
           <Image
             borderRadius={"full"}
             boxSize={"120px"}
-            src={"../public/pfp.png"}
+            src={pfp}
             alt={"pfp"}
             border={"2px solid"}
             borderColor={"gray.500"}
