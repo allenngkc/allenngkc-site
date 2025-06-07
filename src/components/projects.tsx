@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Box, Text, Heading, Image, SimpleGrid, Link } from '@chakra-ui/react';
 import pathexploraGif from '../assets/pathexplora.gif';
 import allenngkcsite from '../assets/allenngkcsite.png';
