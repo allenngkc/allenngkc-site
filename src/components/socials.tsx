@@ -5,14 +5,6 @@ function Socials() {
     return (
         <> 
             <Container>
-                <Button 
-                bg="#81E6D9" 
-                color="black"
-                mb={10}
-                id='projects'
-                >
-                My Projects  &gt;
-                </Button>
                 <Box display={{base: 'block', md: 'flex'}} alignItems="center" mb="1.5rem">
                     <Box textAlign={"left"} mb={8}>
                         <Heading as="h3" fontSize={22}>
