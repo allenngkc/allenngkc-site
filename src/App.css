@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
+  background-color: inherit;
 }
 
 @keyframes logo-spin {
@@ -18,4 +20,17 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+
+/* Ensure no horizontal overflow */
+* {
+  box-sizing: border-box;
 }
