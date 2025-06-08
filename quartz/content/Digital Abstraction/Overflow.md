@@ -1,2 +1,0 @@
-- Digital systems usually operate on a fixed number of digits
-- Addition is said to overflow if the result is too big to fit in the available digits

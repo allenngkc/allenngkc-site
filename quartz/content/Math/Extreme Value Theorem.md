@@ -1,3 +1,0 @@
-If $f$ is continuous on $[a,b]$, then $\exists$ numbers $c,d\in[a,b]$ such that $f(c)\leq f(x) \leq f(d)$, $\forall x \in [a,b]$. In other words. f possesses both an absolute maximum and minimum, where f(c) is the absolute minimum and f(d) is the absolute maximum
-
-> This theorem basically means that if function is continuous on $[a,b]$ then there must be absolute maximum and minimum within that interval
