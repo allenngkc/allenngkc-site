@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/notes",       "destination": "https://allenngkc-site-obsidian.vercel.app" },
-    { "source": "/notes/:slug*", "destination": "https://allenngkc-site-obsidian.vercel.app:slug*" }
-  ]
-}

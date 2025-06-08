@@ -100,7 +100,14 @@ const Bio: React.FC = () => {
             mx="auto"
             mt={8}
             mb={4}
-            onClick={() => window.location.href = '/notes'}
+            onClick={() => window.open('https://notes.allenn.dev', '_blank')}
+            _hover={{ 
+              transform: 'translateY(-4px)',
+              boxShadow: 'lg',
+              bg: "#6BC5C2",
+              transition: 'all 0.2s ease-in-out'
+            }}
+            transition="all 0.2s ease-in-out"
           >
               Obsidian Notes &gt;
           </Button>
