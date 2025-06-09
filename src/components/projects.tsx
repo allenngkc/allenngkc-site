@@ -33,7 +33,7 @@ const projects: Project[] = [
 
 function Projects() {
     return (
-        <Container mb={8} id='projects'>  
+        <Container mb={8} id='projects' maxW="container.xl" px={{base: 4, md: 8}}>  
             <Box textAlign={"left"} mb={8}>
                 <Heading as="h3" fontSize={22}>
                     Projects
@@ -45,8 +45,18 @@ function Projects() {
                     border: "none",
                     margin: "0 0 32px 0"
                 }} />
-                <Box borderBottom="2px" borderColor="gray.200" mb={6} width="550px">
-                    <SimpleGrid columns={{ base: 1, md: 2 }} gap={6}>
+                <Box 
+                    borderBottom="2px" 
+                    borderColor="gray.200" 
+                    mb={6} 
+                    width={{base: "100%", md: "550px"}}
+                    maxWidth="100%"
+                >
+                    <SimpleGrid 
+                        columns={{ base: 1, sm: 1, md: 2 }} 
+                        gap={{base: 4, md: 6}}
+                        width="100%"
+                    >
                     {projects.map((project, index) => (
                         <Link
                             key={index}
@@ -67,12 +77,16 @@ function Projects() {
                                 }}
                                 cursor="pointer"
                                 transition="all 0.2s ease-in-out"
+                                width="100%"
+                                maxWidth="100%"
                             >
                                 <Image
                                     src={project.image}
                                     alt={project.title}
                                     objectFit="cover"
                                     mb={3}
+                                    width="100%"
+                                    height={{base: "200px", md: "auto"}}
                                 />
                                 <Heading as="h4" size="md" mb={2} color="black">
                                     {project.title}
