@@ -64,8 +64,8 @@ const NavBar: React.FC = () => {
             <HStack alignContent="center" justifyContent="center">
                 <NavButton label="Home" active={activePage === 'Home'} onClick={() => handleNavClick('Home')}/>
                 <NavButton label="About" active={activePage === 'About'} onClick={() => handleNavClick('About')}/>
-                <NavButton label="Projects" active={activePage === 'Projects'} onClick={() => handleNavClick('Projects')}/>
                 <NavButton label="Notes" active={activePage === 'Notes'} onClick={() => handleNavClick('Notes')}/>
+                <NavButton label="Projects" active={activePage === 'Projects'} onClick={() => handleNavClick('Projects')}/>
             </HStack>
         </Container>
     )
