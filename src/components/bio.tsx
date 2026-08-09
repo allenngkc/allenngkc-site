@@ -5,7 +5,7 @@ import pfp from "../assets/pfp.png";
 
 const Bio: React.FC = () => {
   return (
-    <Container mb={8} pt={{base: "60px", md: "0"}}>
+    <Container maxW="2xl" mb={8} pt={{base: "60px", md: "0"}}>
         <Box
           borderRadius="lg"
           w="100%"
@@ -18,7 +18,7 @@ const Bio: React.FC = () => {
           css={{backdropFilter: "blur(10px)"}}
         >
           <Text>
-              Hello, I'm a software engineer based in Canada — currently seeking Winter 2027 internship opportunities!
+              Hello, I'm a software engineer based in Canada, currently seeking Winter 2027 internship opportunities!
           </Text>
         </Box>
 

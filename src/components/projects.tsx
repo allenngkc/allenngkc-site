@@ -33,7 +33,7 @@ const projects: Project[] = [
 
 function Projects() {
     return (
-        <Container mb={8} id='projects' maxW="container.xl" px={{base: 4, md: 8}}>  
+        <Container mb={8} id='projects' maxW="2xl" px={{base: 4, md: 8}}>  
             <Box textAlign={"left"} mb={8}>
                 <Heading as="h3" fontSize={22}>
                     Projects
