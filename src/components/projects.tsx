@@ -86,6 +86,7 @@ function Projects() {
                                 transition="all 0.2s ease-in-out"
                                 width="100%"
                                 maxWidth="100%"
+                                h="100%"
                             >
                                 <Image
                                     src={project.image}
@@ -93,7 +94,7 @@ function Projects() {
                                     objectFit="cover"
                                     mb={3}
                                     width="100%"
-                                    height={{base: "200px", md: "auto"}}
+                                    height={{base: "200px", md: "170px"}}
                                 />
                                 <Heading as="h4" size="md" mb={2} color="black">
                                     {project.title}
