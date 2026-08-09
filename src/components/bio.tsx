@@ -18,7 +18,7 @@ const Bio: React.FC = () => {
           css={{backdropFilter: "blur(10px)"}}
         >
           <Text>
-              Hello, I'm a software engineer based in Canada!
+              Hello, I'm a software engineer based in Canada — currently seeking Winter 2027 internship opportunities!
           </Text>
         </Box>
 
@@ -171,7 +171,7 @@ const Bio: React.FC = () => {
               width={{ base: "100%", md: "auto" }}
               mb={{ base: 2, md: 0 }}
             >
-              2025 Jan-Apr
+              2025 Jan-May
             </Text>
             <Text fontSize={16} ml={{ base: 0, md: 3 }} maxWidth={"30rem"}>
               Software Engineering Intern at PointClickCare
@@ -192,13 +192,30 @@ const Bio: React.FC = () => {
               2025 Sept-Dec
             </Text>
             <Text fontSize={16} ml={{ base: 0, md: 3 }} maxWidth={"30rem"}>
-              Incoming Software Engineering Intern at PointClickCare
+              Software Engineering Intern at PointClickCare
             </Text>
-            
           </Box>
           <Box mb={1} ml={{ base: 0, md: 125 }}>
             <Text fontSize={15} color="gray.400">
-              Incoming SWE Intern for fall 2025 term
+              Prototyped an MCP tool exposing PointClickCare UI components to LLMs (Java, SQL, MCP)
+            </Text>
+          </Box>
+          <Box display={{ base: "block", md: "flex" }} mb={1}>
+            <Text
+              fontWeight="bold"
+              fontSize={16}
+              width={{ base: "100%", md: "auto" }}
+              mb={{ base: 2, md: 0 }}
+            >
+              2026 Jun-Present
+            </Text>
+            <Text fontSize={16} ml={{ base: 0, md: 3 }} maxWidth={"30rem"}>
+              Software Engineering Intern at Altruist, San Francisco
+            </Text>
+          </Box>
+          <Box mb={1} ml={{ base: 0, md: 125 }}>
+            <Text fontSize={15} color="gray.400">
+              Episodic memory system for Hazel, an AI assistant for financial advisors
             </Text>
           </Box>
         </Box>

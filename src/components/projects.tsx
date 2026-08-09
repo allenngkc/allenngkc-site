@@ -13,7 +13,7 @@ interface Project {
 const projects: Project[] = [
     {
         title: "PathExplora",
-        description: "An interactive pathfinding visualiation application made with pygame",
+        description: "An interactive pathfinding visualization application made with pygame",
         image: pathexploraGif,
         link: "https://github.com/allenngkc/PathExplora"
     },

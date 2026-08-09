@@ -1,4 +1,4 @@
-import { Button, Container, Heading, Box, List, ListItem, Link, Icon } from '@chakra-ui/react';
+import { Button, Container, Heading, Box, List, ListItem, Icon } from '@chakra-ui/react';
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
 
 function Socials() {
@@ -20,36 +20,27 @@ function Socials() {
                         <List.Root>
                             <ListItem>
                                 <Icon mr={2}><IoLogoGithub/></Icon>
-                                <Link href="https://github.com/allenngkc" target="_blank">
-                                    <Button
-                                    variant="ghost"
-                                    colorScheme="teal"
-                                    >
+                                <Button asChild variant="ghost" colorPalette="teal">
+                                    <a href="https://github.com/allenngkc" target="_blank" rel="noopener noreferrer">
                                         @allenngkc
-                                    </Button>
-                                </Link>
+                                    </a>
+                                </Button>
                             </ListItem>
                             <ListItem>
                                 <Icon mr={2}><IoLogoLinkedin/></Icon>
-                                <Link href="https://linkedin.com/allenngkc" target="_blank">
-                                    <Button
-                                    variant="ghost"
-                                    colorScheme="teal"
-                                    >
+                                <Button asChild variant="ghost" colorPalette="teal">
+                                    <a href="https://linkedin.com/in/allenngkc" target="_blank" rel="noopener noreferrer">
                                         @allenngkc
-                                    </Button>
-                                </Link>
+                                    </a>
+                                </Button>
                             </ListItem>
                             <ListItem>
                                 <Icon mr={2}><IoLogoTwitter/></Icon>
-                                <Link href="https://x.com/allenngkc" target="_blank">
-                                    <Button
-                                    variant="ghost"
-                                    colorScheme="teal"
-                                    >
+                                <Button asChild variant="ghost" colorPalette="teal">
+                                    <a href="https://x.com/allenngkc" target="_blank" rel="noopener noreferrer">
                                         @allenngkc
-                                    </Button>
-                                </Link>
+                                    </a>
+                                </Button>
                             </ListItem>
                         </List.Root>
                     </Box>  
