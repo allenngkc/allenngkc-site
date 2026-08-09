@@ -1,5 +1,6 @@
 import { Container, Box, Text, Heading, Image, SimpleGrid, Link } from '@chakra-ui/react';
 import pathexploraGif from '../assets/pathexplora.gif';
+import spectrasphereGif from '../assets/spectrasphere.gif';
 import allenngkcsite from '../assets/allenngkcsite.png';
 import sneakertracking from '../assets/sneakertrackingt.png';
 
@@ -11,6 +12,12 @@ interface Project {
 }
 
 const projects: Project[] = [
+    {
+        title: "SpectraSphere",
+        description: "Hack the North 2025 2nd place winner of the Snapchat Spectacles AR Challenge - AR storytelling built with Cohere and Google Gemini",
+        image: spectrasphereGif,
+        link: "https://devpost.com/software/htn-zq6138"
+    },
     {
         title: "PathExplora",
         description: "An interactive pathfinding visualization application made with pygame",
